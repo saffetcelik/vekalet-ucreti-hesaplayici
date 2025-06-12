@@ -7,6 +7,12 @@
 
 2024 yılı Avukatlık Asgari Ücret Tarifesi'ne göre vekalet ücretlerini hesaplayan modern ve kullanıcı dostu masaüstü uygulaması.
 
+## 📸 Ekran Görüntüleri
+
+![onizleme](https://github.com/user-attachments/assets/bacf4add-9afd-455c-9729-6a55c6c6a4fb)
+
+
+
 ## 📋 İçindekiler
 
 - [Özellikler](#-özellikler)
@@ -53,11 +59,6 @@
 - Türkçe yerelleştirme
 - Responsive tasarım
 - Sistem teması uyumlu
-
-## 📸 Ekran Görüntüleri
-
-![onizleme](https://github.com/user-attachments/assets/bacf4add-9afd-455c-9729-6a55c6c6a4fb)
-
 
 ## 🚀 Kurulum
 
