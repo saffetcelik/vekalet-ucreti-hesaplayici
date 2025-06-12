@@ -56,6 +56,7 @@
 
 ## 📸 Ekran Görüntüleri
 
+![onizleme](https://github.com/user-attachments/assets/bacf4add-9afd-455c-9729-6a55c6c6a4fb)
 
 
 ## 🚀 Kurulum
