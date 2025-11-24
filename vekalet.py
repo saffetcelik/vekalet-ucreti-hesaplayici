@@ -47,68 +47,69 @@ class ModernVekaletHesaplayici(QMainWindow):
 class VekaletUcretiHesaplayici:
     def __init__(self):
         self.dilimler = [
-            (400000, 0.16),
-            (400000, 0.15),
-            (800000, 0.14),
-            (1200000, 0.11),
-            (1600000, 0.08),
-            (2000000, 0.05),
-            (2400000, 0.03),
-            (2800000, 0.02),
+            (600000, 0.16),
+            (600000, 0.15),
+            (1200000, 0.14),
+            (1200000, 0.13),
+            (1800000, 0.11),
+            (2400000, 0.08),
+            (3000000, 0.05),
+            (3600000, 0.03),
+            (4200000, 0.02),
             (float('inf'), 0.01)
         ]
         
         self.asgari_ucretler = {
-            "İcra Daireleri": 6000,
-            "İcra Mahkemeleri (Takip)": 7000,
-            "İcra Mahkemeleri (Duruşmalı)": 12000,
-            "Sulh Hukuk Mahkemeleri": 18000,
-            "Asliye Mahkemeleri": 30000,
-            "Tüketici Mahkemeleri": 15000,
-            "Fikri ve Sınai Haklar Mahkemesi": 40000,
-            "Ağır Ceza Mahkemeleri": 48000,
-            "Çocuk Mahkemeleri": 30000,
-            "Çocuk Ağır Ceza Mahkemeleri": 48000,
-            "Yargıtay İlk Derece": 46500,
-            "İstinaf (Duruşmasız)": 16000,
-            "İstinaf (Duruşmalı)": 32000,
-            "Danıştay İlk Derece (Duruşmasız)": 28000,
-            "Danıştay İlk Derece (Duruşmalı)": 56000
+            "İcra Daireleri": 9000,
+            "İcra Mahkemeleri (Takip)": 11000,
+            "İcra Mahkemeleri (Duruşmalı)": 18000,
+            "Sulh Hukuk Mahkemeleri": 30000,
+            "Asliye Mahkemeleri": 45000,
+            "Tüketici Mahkemeleri": 22500,
+            "Fikri ve Sınai Haklar Mahkemesi": 55000,
+            "Ağır Ceza Mahkemeleri": 65000,
+            "Çocuk Mahkemeleri": 45000,
+            "Çocuk Ağır Ceza Mahkemeleri": 65000,
+            "Yargıtay İlk Derece": 65000,
+            "İstinaf (Duruşmasız)": 22000,
+            "İstinaf (Duruşmalı)": 42000,
+            "Danıştay İlk Derece (Duruşmasız)": 40000,
+            "Danıştay İlk Derece (Duruşmalı)": 65000
         }
 
         self.maktu_ucretler_kategorili = {
             "Yargı Yerleri": {
-                "İcra Dairelerinde yapılan takipler": 6000,
-                "İcra Mahkemelerinde takip edilen işler": 7000,
-                "İcra Mahkemelerinde takip edilen dava ve duruşmalı işler": 12000,
-                "Tahliyeye ilişkin icra takipleri": 13500,
-                "Sulh Hukuk Mahkemelerinde takip edilen davalar": 18000,
-                "Sulh Ceza Hakimliklerinde takip edilen işler": 13500,
-                "Asliye Mahkemelerinde takip edilen davalar": 30000,
-                "Tüketici Mahkemelerinde takip edilen davalar": 15000,
-                "Fikri Sınai Haklar Mahkemelerindeki davalar": 40000,
-                "Ağır Ceza Mahkemelerinde takip edilen davalar": 48000,
-                "Çocuk Mahkemelerinde takip edilen davalar": 30000
+                "İcra Dairelerinde yapılan takipler": 9000,
+                "İcra Mahkemelerinde takip edilen işler": 11000,
+                "İcra Mahkemelerinde takip edilen dava ve duruşmalı işler": 18000,
+                "Tahliyeye ilişkin icra takipleri": 20000,
+                "Sulh Hukuk Mahkemelerinde takip edilen davalar": 30000,
+                "Sulh Ceza Hakimliklerinde takip edilen işler": 18000,
+                "Asliye Mahkemelerinde takip edilen davalar": 45000,
+                "Tüketici Mahkemelerinde takip edilen davalar": 22500,
+                "Fikri Sınai Haklar Mahkemelerindeki davalar": 55000,
+                "Ağır Ceza Mahkemelerinde takip edilen davalar": 65000,
+                "Çocuk Mahkemelerinde takip edilen davalar": 45000
             },
             "Danışmanlık Hizmetleri": {
-                "Büroda sözlü danışma (ilk bir saate kadar)": 3500,
-                "Çağrı üzerine gidilen yerde sözlü danışma (ilk bir saate kadar)": 6000,
-                "Yazılı danışma": 6000,
-                "Her türlü dilekçe yazılması": 4500
+                "Büroda sözlü danışma (ilk bir saate kadar)": 4000,
+                "Çağrı üzerine gidilen yerde sözlü danışma (ilk bir saate kadar)": 7000,
+                "Yazılı danışma": 7000,
+                "Her türlü dilekçe yazılması": 6000
             },
             "Sözleşmeler": {
-                "Kira sözleşmesi ve benzeri": 6000,
-                "Tüzük, yönetmelik, miras sözleşmesi": 24000,
-                "Şirket ana sözleşmesi": 16000
+                "Kira sözleşmesi ve benzeri": 8000,
+                "Tüzük, yönetmelik, miras sözleşmesi": 32000,
+                "Şirket ana sözleşmesi": 21000
             },
             "Üst Mahkemeler": {
-                "Yargıtay'da ilk derece": 46500,
-                "İstinaf başvuru": 16000,
-                "İstinaf duruşmalı": 32000,
-                "Yargıtay temyiz başvurusu": 28000,
-                "Yargıtay duruşmalı temyiz": 56000,
-                "Anayasa Mahkemesi bireysel başvuru": 30000,
-                "Anayasa Mahkemesi duruşmalı başvuru": 60000
+                "Yargıtay'da ilk derece": 65000,
+                "İstinaf başvuru": 22000,
+                "İstinaf duruşmalı": 42000,
+                "Yargıtay temyiz başvurusu": 30000,
+                "Yargıtay duruşmalı temyiz": 40000,
+                "Anayasa Mahkemesi bireysel başvuru": 40000,
+                "Anayasa Mahkemesi duruşmalı başvuru": 80000
             }
         }
 
@@ -161,7 +162,7 @@ class MaktuUcretlerWidget(QWidget):
     def initUI(self):
         layout = QVBoxLayout(self)
         
-        baslik = QLabel("2024 Yılı Maktu Vekalet Ücretleri")
+        baslik = QLabel("2025 Yılı Maktu Vekalet Ücretleri")
         baslik.setFont(QFont("Segoe UI", 14, QFont.Weight.Bold))
         baslik.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(baslik)
@@ -195,7 +196,7 @@ class HakkindaWidget(QWidget):
         baslik.setAlignment(Qt.AlignmentFlag.AlignCenter)
         
         aciklama = QLabel("""
-        Bu program, 2024 yılı Avukatlık Asgari Ücret Tarifesi'ne göre 
+        Bu program, 2025 yılı Avukatlık Asgari Ücret Tarifesi'ne göre
         vekalet ücretlerini hesaplamak için tasarlanmıştır.
                           
                 Avukatlık Ücret Tarifesinde Değişiklik Olduğunda   

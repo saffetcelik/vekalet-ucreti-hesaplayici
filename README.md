@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
 
-2024 yılı Avukatlık Asgari Ücret Tarifesi'ne göre vekalet ücretlerini hesaplayan modern ve kullanıcı dostu masaüstü uygulaması.
+2025 yılı Avukatlık Asgari Ücret Tarifesi'ne göre vekalet ücretlerini hesaplayan modern ve kullanıcı dostu masaüstü uygulaması.
 
 ## 📸 Ekran Görüntüleri
 
@@ -29,7 +29,7 @@
 
 ### 🧮 Hesaplama Özellikleri
 - **Canlı Hesaplama**: Dava değeri girilirken anlık hesaplama
-- **Dilimli Hesaplama**: 2024 tarife dilimlerine göre otomatik hesaplama
+- **Dilimli Hesaplama**: 2025 tarife dilimlerine göre otomatik hesaplama
 - **Asgari Ücret Kontrolü**: Mahkeme türüne göre asgari ücret garantisi
 - **Detaylı Rapor**: Hesaplama sürecinin adım adım gösterimi
 - **Kopyalama Özelliği**: Hesaplanan ücreti tek tıkla kopyalama
@@ -122,18 +122,19 @@ pyinstaller --onefile --windowed --icon=money.png vekalet.py
 
 ### Hesaplama Mantığı
 
-Program 2024 yılı tarife dilimlerini kullanır:
+Program 2025 yılı tarife dilimlerini kullanır:
 
 | Dilim | Oran |
 |-------|------|
-| İlk 400.000 TL | %16 |
-| İkinci 400.000 TL | %15 |
-| Üçüncü 800.000 TL | %14 |
-| Dördüncü 1.200.000 TL | %11 |
-| Beşinci 1.600.000 TL | %8 |
-| Altıncı 2.000.000 TL | %5 |
-| Yedinci 2.400.000 TL | %3 |
-| Sekizinci 2.800.000 TL | %2 |
+| İlk 600.000 TL | %16 |
+| Sonraki 600.000 TL | %15 |
+| Sonraki 1.200.000 TL | %14 |
+| Sonraki 1.200.000 TL | %13 |
+| Sonraki 1.800.000 TL | %11 |
+| Sonraki 2.400.000 TL | %8 |
+| Sonraki 3.000.000 TL | %5 |
+| Sonraki 3.600.000 TL | %3 |
+| Sonraki 4.200.000 TL | %2 |
 | Fazlası | %1 |
 
 ### Önemli Notlar
