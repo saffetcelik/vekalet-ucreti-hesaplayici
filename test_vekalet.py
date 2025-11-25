@@ -1,5 +1,5 @@
 import unittest
-from vekalet import VekaletUcretiHesaplayici
+from vekalet_logic import VekaletUcretiHesaplayici
 
 class TestVekaletUpdate(unittest.TestCase):
     def setUp(self):
