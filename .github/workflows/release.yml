@@ -33,12 +33,13 @@ jobs:
     - name: Build Executable
       run: |
         pyinstaller --onefile --windowed --icon=money.png --name "VekaletHesapla" vekalet.py
+        dir dist
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: VekaletHesapla
-        path: dist/VekaletHesapla.exe
+        path: dist/*.exe
 
     - name: Create Release
       uses: softprops/action-gh-release@v1
