@@ -34,6 +34,12 @@ jobs:
       run: |
         pyinstaller --onefile --windowed --icon=money.png --name "VekaletHesapla" vekalet.py
 
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: VekaletHesapla
+        path: dist/VekaletHesapla.exe
+
     - name: Create Release
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
